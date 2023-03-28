@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbar__logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+    .navbar__links{
+        display: flex;
+        align-items: center;
+        .navbar__link{
+            margin: 0 0.5rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: #f00;
+            }
+        }
+    }
+}
