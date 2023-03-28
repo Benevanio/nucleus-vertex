@@ -29,6 +29,7 @@ O fetch da nossa api se encontra na pasta componentes API.
 ## Apêndice
 Na construção desta api usamos o 
 -[SASS](https://sasscss.org/documentation#:~:text=Documentation%201%20If%20you%E2%80%99re%20looking%20for%20an%20introduction,the%20table%20of%20contents%20for%20the%20language%20reference%21)
+como folha de estilos
 
 
 ## Autores
