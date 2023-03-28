@@ -21,9 +21,15 @@ const Api = () => {
     }, [])
    
     if (loading) {
-        return     <div className="spinner">
-        <div className="Spinner"></div>
-        </div>
+        return    <div className="honeycomb">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     }
   return (
     <>
@@ -31,10 +37,10 @@ const Api = () => {
     <div className="container container2">
         <div className="row">
         {articles.map((article, id ) => (
-          <div class="col-sm-6 mb-3 mb-sm-0" key={id}>
+          <div className="col-sm-6 mb-3 mb-sm-0" key={id}>
             <div className="card mb-5 shadow-sm">
-            <div class="card">
-              <div class="card-body">
+            <div className="card">
+              <div className="card-body">
               <h5 className="card-title">{article.author}</h5>
               <p className="card-text">{article.content}</p>   
               <p className="card-text">{article.description}</p>
@@ -47,9 +53,9 @@ const Api = () => {
               </a>
               <img src={article.urlToImage} alt="IMAGEN DA NOTICIA" className="card-img-top" />
               </div>
-              </div>
-              </div>
-              </div>
+            </div>
+          </div>
+        </div>
         ))}
         </div>
 
