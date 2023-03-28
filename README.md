@@ -47,7 +47,10 @@ OBS: Não acessem o link do vercel nesta api, so esta funcionando a home page, d
 
 ## Stack utilizada
 
-**Front-end:** React, SASS,BOOSTRAP
+**Front-end:** 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 
 ## DEMONSTRAÇÃO
