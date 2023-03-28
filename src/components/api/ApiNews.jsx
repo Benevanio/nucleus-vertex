@@ -1,6 +1,8 @@
 import React from 'react'
 import './ApiNews.scss'
 import { useState,useEffect } from 'react'
+import Footer from '../Footer/Footer';
+import Navbar from '../navbar/Navbar';
 const Api = () => {
     const APIURNEWSAPI = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=85b932b146bd4418943f0e62c98f976a';
     const [articles, setArticles] = useState([]);
@@ -24,6 +26,8 @@ const Api = () => {
         </div>
     }
   return (
+    <>
+    <Navbar />
     <div className="container">
         <div className="row">
         {articles.map((article, id ) => (
@@ -43,6 +47,8 @@ const Api = () => {
         </div>
 
    </div>
+   <Footer />
+    </>
   )
 }
 

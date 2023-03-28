@@ -16,10 +16,14 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="#">Home</a>
+            <a className="nav-link" aria-current="page" href="/">
+            <i className="fas fa-home"></i>
+            </a>
         </li>
         <li className="nav-item">
-            <Link className="nav-link" to="/api">Api</Link>
+            <Link className="nav-link" to="/api">
+            <i className="fas fa-newspaper"></i>
+            </Link>
 
         </li>
         </ul>
