@@ -1,29 +1,47 @@
 .navbar{
     background-color: #000;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.2rem;
     display: flex;
+    width: 100%;   
     justify-content: space-between;
     align-items: center;
-    .navbar__logo{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-image: url("https://user-images.githubusercontent.com/78994881/228210310-7e4bcf46-7f64-42be-8393-6eef92e13fc6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .navbar-brand{
+        color: #fff;
         font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-    }
-    .navbar__links{
-        display: flex;
-        align-items: center;
-        .navbar__link{
-            margin: 0 0.5rem;
-            text-decoration: none;
+        text-decoration: none;
+        &:hover{
             color: #fff;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: #f00;
-            }
         }
     }
+    .nav-item{
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+       a{
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        &:hover{
+            color: #fff;
+        }
+       }
+    }
+    
 }
