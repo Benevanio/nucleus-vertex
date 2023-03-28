@@ -1,25 +1,43 @@
-.spinner {
-    background-image: linear-gradient(#acb6e5 35%, #86fde8);
-    width: 100px;
-    height: 100px;
-    animation: spinning21 1.7s linear infinite;
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+    box-sizing: border-box;
+   .card{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    background-image: url("https://user-images.githubusercontent.com/78994881/228210310-7e4bcf46-7f64-42be-8393-6eef92e13fc6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*usar o overlay para colocar uma cor por cima da imagem*/
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     text-align: center;
-    border-radius: 50px;
-    filter: blur(1px);
-    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255),
-          0px 5px 20px 0px rgb(0, 225, 255);
-  }
-  
-  .Spinner {
-    background-color: rgb(36, 36, 36);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    filter: blur(10px);
-  }
-  
-  @keyframes spinning21 {
-    to {
-      transform: rotate(360deg);
-    }
-  }
+   img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+   }
+   }
+}

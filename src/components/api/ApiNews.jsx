@@ -21,26 +21,33 @@ const Api = () => {
     }, [])
    
     if (loading) {
-        return     <div class="spinner">
-        <div class="Spinner"></div>
+        return     <div className="spinner">
+        <div className="Spinner"></div>
         </div>
     }
   return (
     <>
     <Navbar />
-    <div className="container">
+    <div className="container container2">
         <div className="row">
         {articles.map((article, id ) => (
-          <div className="col-md-4" key={id}>
-            <div className="card mb-4 shadow-sm">
-              <p className="card-text">{article.author}</p>
+          <div class="col-sm-6 mb-3 mb-sm-0" key={id}>
+            <div className="card mb-5 shadow-sm">
+            <div class="card">
+              <div class="card-body">
+              <h5 className="card-title">{article.author}</h5>
               <p className="card-text">{article.content}</p>   
               <p className="card-text">{article.description}</p>
               <p className="card-text">{article.publishedAt}</p>
               <p className="card-text">{article.source.name}</p>
               <p className="card-text">{article.title}</p>
-              <p className="card-text">{article.url}</p>
-              <p className="card-text">{article.urlToImage}</p>
+              <a href={article.url} target="_blank" rel="noreferrer" className="card-text">
+              Veja a materia completa em..
+              <i className="fas fa-external-link-alt"></i>
+              </a>
+              <img src={article.urlToImage} alt="IMAGEN DA NOTICIA" className="card-img-top" />
+              </div>
+              </div>
               </div>
               </div>
         ))}
