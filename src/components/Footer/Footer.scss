@@ -1,0 +1,35 @@
+.footer{
+    background-color: #000;
+    background-image: url("https://user-images.githubusercontent.com/78994881/228210310-7e4bcf46-7f64-42be-8393-6eef92e13fc6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    .footer__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__social-icon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100px;
+            i{
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+    .footer__text{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}

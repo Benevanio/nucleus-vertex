@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../navbar/Navbar'
 import { Link } from 'react-router-dom'
 import './Home.scss'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
   return (
@@ -28,7 +29,7 @@ const Home = () => {
         </button>
       </div>
     </section>    
-   
+   <Footer />
     </>
   )
 }
